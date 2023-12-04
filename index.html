@@ -1,0 +1,54 @@
+<!-- 
+    Name: Yash Patel
+    Email: Yash_Patel5@student.uml.edu
+    File: index.html
+ -->
+ 
+<html>
+<head>
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+    <h1>Multiplication Table Generator</h1>
+    <div id="num_form">
+        <div id="message">Please enter values between -50 and 50 for all fields.</div>
+        <form id="numbers"><br>
+
+            <label for="min_x">Minimum Column Value</label>
+            <div id="min_x_slider"></div>
+            <input type="text" id="min_x" name="min_x"><br><br>
+
+            <label for="max_x">Maximum Column Value</label>
+            <div id="max_x_slider"></div>
+            <input type="text" id="max_x" name="max_x"><br><br>
+
+            <label for="min_y">Minimum Row Value</label>
+            <div id="min_y_slider"></div>
+            <input type="text" id="min_y" name="min_y"><br><br>
+
+            <label for="max_y">Maximum Row Value</label>
+            <div id="max_y_slider"></div>
+            <input type="text" id="max_y" name="max_y"><br><br>
+
+            <input type="submit" id="submit" value="Save Table">
+        </form>
+    </div>
+
+    <!-- Modifying the structure of my page so that the table, which is displayed 
+         dynamically when the sliders move, is shown side by side with the form, 
+         and the tab interface is displayed under the form and the table. 
+         display_table is the div for displaying the dynamically generated table
+         multiplication_table is the div for the tab interface
+    -->
+    <div id="display_table"></div><br>
+    <div id="multiplication_table"></div>
+
+    <script src="js/generate_table.js"></script>
+
+</body>
+</html>
